@@ -1,0 +1,13 @@
+with "../gcode/gcode";
+with "../stl/stl";
+
+project Optim is
+   for Source_Dirs use (".");
+   for Object_Dir use "obj";
+   for Main use ("main.adb");
+
+   package Binder is
+      for Default_Switches ("Ada") use ("-E");
+   end Binder;
+
+end Optim;

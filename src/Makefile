@@ -1,0 +1,2 @@
+all :
+	gprbuild -Poptim

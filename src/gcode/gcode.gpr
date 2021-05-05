@@ -1,0 +1,13 @@
+library project gcode is
+   for Languages use ("Ada");
+   for Library_Name use "gcode";
+   for Source_Dirs use (".");
+   for Object_Dir use "obj";
+   for Library_Dir use "lib";
+   for Library_Kind use "Static";
+
+   package Binder is
+      for Default_Switches ("Ada") use ("-E");
+   end Binder;
+
+end gcode;
